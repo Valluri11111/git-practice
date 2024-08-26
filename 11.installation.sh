@@ -14,3 +14,4 @@ then
     dnf install git -y
 else
     echo "Git already Installed, Nothing to do anything..."     
+fi
