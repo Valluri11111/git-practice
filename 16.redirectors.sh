@@ -44,10 +44,10 @@ fi
 #Example: 15.loops.sh git mysql ngnix postfix
 for package in $@ #Refers to all arguments passed..
 do
-    dnf list installed $package &>>$LOG_FILE
+    dnf list installed $package &>> $LOG_FILE
     if [ $? -ne 0 ]
     then
-        echo "$package not Installed, Going to Install it...." &>>$LOG_FILE
+        echo "$package not Installed, Going to Install it...." &>> $LOG_FILE
         dnf install $package -y
         VALIDATE $? "Installing $package"
     else
