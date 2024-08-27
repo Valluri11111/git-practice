@@ -16,16 +16,16 @@ N="\e[0m"
 CHECK_ROOT(){
     if [ $USERID -ne 0 ]
     then
-        echo -e "$R Please run the script with root privilages $N" &>>$LOG_FILE
+        echo -e "$R Please run the script with root privilages $N" &>> $LOG_FILE
         exit 1
     fi
 }
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo -e "$2 is... $R Failed $N" &>>$LOG_FILE
+        echo -e "$2 is... $R Failed $N" &>> $LOG_FILE
     else
-        echo -e "$2 is... $G Success $N" &>>$LOG_FILE
+        echo -e "$2 is... $G Success $N" &>> $LOG_FILE
    fi
    }
 
@@ -51,7 +51,7 @@ do
         dnf install $package -y
         VALIDATE $? "Installing $package"
     else
-        echo -e " $package is already $Y installed...nothing to do $N" &>>$LOG_FILE
+        echo -e " $package is already $Y installed...nothing to do $N" &>> $LOG_FILE
     fi
 done
 
