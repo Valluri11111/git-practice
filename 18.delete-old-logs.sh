@@ -9,9 +9,9 @@ N="\e[0m"
 
 if [ -d $SOURCE_DIR ]
 then
-    echo "$SOURCE_DIR  $G Exists $N"
+    echo -e "$SOURCE_DIR  $G Exists $N"
 else
-    echo "$SOURCE_DIR  $R Does not Exists $N"
+    echo -e "$SOURCE_DIR  $R Does not Exists $N"
     exit 1
 fi
 
