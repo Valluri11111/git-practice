@@ -17,4 +17,4 @@ fi
 
 # SOURCE_DIR =/home/ec2-user/logs
 FILES=$(find $SOURCE_DIR -name "*.log" -mtime +14)
-echo "Files: $Files"
+echo "Files: $FILES"
