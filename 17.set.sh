@@ -9,4 +9,4 @@ failure(){
 
 trap ' failure "${LINENO}" "$BASH_COMMAND"' ERR #ERR is the Error Signal
 echo "Hello World"
-echooo "Hello World"
+echooo "Hello Wold"
